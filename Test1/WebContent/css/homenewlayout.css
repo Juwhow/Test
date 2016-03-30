@@ -1,0 +1,182 @@
+/*header*/
+header
+{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+	background-color:black;
+	height:60px;
+	background-image:url(../images/1.jpg);
+}
+
+header .nav-left
+{
+    float: left;
+}
+
+header .nav-right
+{
+    float: right;
+}
+
+header .nav > li
+{
+    font-size: 16px;
+    line-height: 75px;
+
+    display: inline-block;
+
+    width: 108px;
+    height: 75px;
+
+    text-align: center;
+	color: white;
+}
+header .nav > li > a
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    margin-top: 15px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+        -ms-flex-align:center;
+            align-items:center;
+	color: white;
+}
+
+header .nav > li:hover > a
+{
+    background-color: rgba(0,0,0,.95);
+	/*发帖按钮随鼠标颜色变化*/	
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.unauthenticated
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 75px;
+    margin: 0 50px 0 40px;
+
+    -webkit-box-align: center;
+
+    -webkit-align-items: center;
+
+        -ms-flex-align: center;
+
+            align-items: center;
+}
+
+.unauthenticated > a
+{
+    font-size: 14px;
+
+    display: inline-block;
+
+    padding: 8px 22px;
+
+    color: white;
+    border: 1px solid;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.unauthenticated > a:hover
+{
+    color: #9bc200;
+    border-color: #9bc200;
+    text-decoration: none;
+	/*根据鼠标移动登录按钮变化*/
+}
+
+.unauthenticated > a:last-child
+{
+    border-color: #89AE00;
+    color: white !important;
+	background-color:green;
+	/*注册按钮*/
+}
+
+
+
+.unauthenticated > span
+{
+    width: 10px;
+}
+
+.nav > li:hover .nav-list
+{
+    display: block;
+}
+
+.nav-list
+{
+    line-height: 100%;
+
+    position: absolute;
+    top: 59px;
+
+    display: none;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav-list-item
+{
+    width: 108px;
+    height: 44px;
+}
+
+.nav-list-item > a
+{
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none;
+}
+
+
+.nav-list-item >.nav-link
+{
+    font-size: 14px;
+
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+			
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    
+}
+
+
+
